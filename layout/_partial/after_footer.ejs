@@ -77,6 +77,10 @@ $(document).ready(function(){
   };
 });
 </script>
+<script src="<%- config.root %>js/ppstats.js"></script>
+<script>
+  window.ppstats("/jstats", "app01");
+</script>
 <% } %>
 <% if ((page.layout=='post'||page.layout=='page')&&!theme.jiathis.enable) { %>
 <script type="text/javascript">
